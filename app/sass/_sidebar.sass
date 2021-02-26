@@ -1,0 +1,170 @@
+@import "search-input"
+
+.mini-sidebar  
+  display: none
+  .sidebar-close-title
+    transform: rotate(-90deg)
+    text-transform: uppercase
+    font: normal 600 13px/6px $montserrat
+    color: #000
+    position: absolute
+    top: 97px
+    right: 0
+    left: 0
+  .btn-icon-search
+    position: absolute
+    left: calc(50% - 8px)
+    top: 150px
+    width: 16px
+    height: 16px
+    padding-top: 15px
+    border-top: 1px solid #E0E0E0 
+    cursor: pointer 
+
+
+.mini-sidebar-active  
+  display: inline-block  
+
+.btn-sidebar
+  position: absolute
+  top: 24px
+  right: 16px
+  cursor: pointer
+  .btn-icon
+    width: 14px
+    height: 14px
+    fill: $violet
+  .btn-icon2
+    display: none
+    width: 20px
+    height: 22px
+
+
+.sidebar
+  width: 100%
+  max-width: 275px
+  height: 100%
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-content: center
+  text-align: center
+  background-color: $bgc
+  padding: 24px 0 0
+  border-right: 1px solid rgba(149, 149, 149, .4)
+  &__logo
+    margin: 0 auto 24px
+    max-width: calc(275px - 96px)
+    width: 100%
+    .tagline
+      margin: 12px 0 0
+      font: normal 700 10px/12px $montserrat
+      color: $violet
+      text-align: left
+      border-left: 2px solid $violet
+      padding-left: 7px
+  &__menu
+    text-align: left
+    ul
+      padding: 0
+      margin: 0
+      li
+        padding: 12px 48px
+        transition: .3s
+        a
+          text-decoration: none
+          font: normal 600 13px/16px $montserrat
+          color: $text
+          text-transform: uppercase
+          display: inline-block
+          width: 100%
+        &:hover
+          background-color: $violet-soft
+          a
+            color: $violet-dark
+      .active
+        background-color: $violet-soft
+        a
+          color: $violet-dark
+  &__support-project
+    margin: 14px 48px 62px
+    padding: 18px 0
+    text-align: left
+    border-top: 4px solid $violet
+    border-bottom: 4px solid $violet
+    a
+      text-decoration: none
+      font: normal 600 13px/16px $montserrat
+      color: $text
+      text-transform: uppercase
+      display: inline-block
+      width: 100%
+  &__search
+    padding: 0 27px
+    margin: 0 0 57px
+  &__social-link
+    p
+      font: normal 500 14px/22.5px $montserrat
+      color: $gray-middle
+      margin-bottom: 18px
+    .social-link-list
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+      align-items: center
+      padding: 0 56px
+      a
+        .social-icon
+          fill: $icon
+          padding-right: 25px
+      a:hover
+        .social-icon
+          fill: $violet 
+      a:first-child
+        .social-icon
+          width: 8px
+          height: 16px
+      a:nth-child(2)
+        .social-icon
+          width: 19px
+          height: 11px
+      a:nth-child(3)
+        .social-icon
+          width: 18px
+          height: 12px
+      a:last-child
+        .social-icon
+          padding-right: 0
+          width: 16px
+          height: 16px
+
+.sidebar-close
+  width: 100%
+  max-width: 48px
+  height: 172px
+  bottom: auto
+  padding: 25px 0 0
+  border-right: 1px solid rgba(149, 149, 149, .4) 
+  border-bottom: 1px solid rgba(149, 149, 149, .4)  
+  filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.16))   
+  .sidebar__logo
+    display: none
+  .sidebar__menu
+    display: none
+  .sidebar__support-project
+    display: none
+  .sidebar__search
+    display: none
+  .sidebar__social-link
+    display: none
+  .btn-sidebar
+    right: 0
+    left: 0
+
+
+        
+

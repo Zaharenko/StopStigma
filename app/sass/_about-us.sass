@@ -1,0 +1,41 @@
+.about-us
+  margin-top: 48px
+  padding: 86px 24px 88px
+  background-color: $violet-soft
+  text-align: center
+  .title-section
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      right: calc(50% - 208px)
+      top: calc(50% - 0.5px)
+      height: 1px
+      background-color: $violet-middle
+      width: 100%
+      max-width: 140px
+    &::before
+      content: ''
+      position: absolute
+      left: calc(50% - 208px)
+      top: calc(50% - 0.5px)
+      height: 1px
+      background-color: $violet-middle
+      width: 100%
+      max-width: 140px  
+  &__text
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-top: 75px
+    p
+      font: normal 500 14px/22px $montserrat
+      color: $text
+      text-align: left
+      a
+        text-decoration: none
+        color: $violet-dark
+    p:first-child
+      margin: 0 16px 0 0
+    p:last-child
+      margin: 0 0 0 16px    

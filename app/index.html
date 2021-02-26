@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>StopStigma</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+	<!-- Template Basic Images Start -->
+	<link rel="icon" href="img/favicon/favicon.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="StopStigma" />
+	<meta property="og:title" content=""/>
+	<meta property="og:description" content=""/>
+	<meta property="og:image" content="img/logo.png"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "" />
+	<!-- Open Graph End-->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- Styles End -->
+
+	<!-- Icon sprite -->
+	<svg style="display: none;">
+		<symbol title="facebook" id="facebook" iewBox="0 0 8 16">
+			<path d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"/>
+		</symbol>
+		<symbol title="vk" id="vk" viewBox="0 0 19 11">
+			<path d="M18.1 0.74C18.23 0.32 18.1 0 17.48 0H15.46C14.94 0 14.71 0.27 14.58 0.57C14.58 0.57 13.55 3.08 12.09 4.72C11.61 5.19 11.4 5.34 11.14 5.34C11.01 5.34 10.8 5.19 10.8 4.76V0.74C10.8 0.23 10.68 0 10.25 0H7.06C6.74 0 6.55 0.24 6.55 0.47C6.55 0.95 7.3 1.07 7.35 2.44V5.42C7.35 6.08 7.23 6.2 6.98 6.2C6.3 6.2 4.62 3.67 3.63 0.79C3.43 0.23 3.24 0 2.72 0H0.69C0.12 0 4.76837e-08 0.27 4.76837e-08 0.57C4.76837e-08 1.11 0.69 3.77 3.2 7.29C4.87 9.7 7.23 11 9.38 11C10.67 11 10.83 10.71 10.83 10.21V8.39C10.83 7.82 10.95 7.7 11.36 7.7C11.66 7.7 12.17 7.85 13.37 9C14.75 10.38 14.97 11 15.75 11H17.77C18.35 11 18.64 10.71 18.48 10.14C18.3 9.57 17.64 8.74 16.77 7.76C16.3 7.21 15.59 6.61 15.37 6.3C15.07 5.92 15.16 5.75 15.37 5.4C15.37 5.4 17.84 1.93 18.1 0.74Z"/>
+		</symbol>
+		<symbol title="youtube" id="youtube" viewBox="0 0 18 12">
+			<path d="M17.235 1.15636C16.7467 0.314182 16.2169 0.159273 15.138 0.100364C14.0603 0.0294546 11.3501 0 9.00225 0C6.64987 0 3.93862 0.0294546 2.862 0.0992728C1.78537 0.159273 1.25437 0.313091 0.761625 1.15636C0.25875 1.99745 0 3.44618 0 5.99673C0 5.99891 0 6 0 6C0 6.00218 0 6.00327 0 6.00327V6.00546C0 8.54509 0.25875 10.0047 0.761625 10.8371C1.25437 11.6793 1.78425 11.832 2.86087 11.9029C3.93863 11.964 6.64987 12 9.00225 12C11.3501 12 14.0602 11.964 15.1391 11.904C16.218 11.8331 16.7479 11.6804 17.2361 10.8382C17.7435 10.0058 18 8.54618 18 6.00655C18 6.00655 18 6.00327 18 6.00109C18 6.00109 18 5.99891 18 5.99782C18 3.44618 17.7435 1.99745 17.235 1.15636ZM6.75 9.27273V2.72727L12.375 6L6.75 9.27273Z"/>
+		</symbol>
+		<symbol title="instagram" id="instagram" viewBox="0 0 16 16">
+			<path d="M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z"/>
+			<path d="M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z"/>
+			<path d="M12.3001 4.23318C12.5945 4.23318 12.8331 3.99454 12.8331 3.70018C12.8331 3.40581 12.5945 3.16718 12.3001 3.16718C12.0057 3.16718 11.7671 3.40581 11.7671 3.70018C11.7671 3.99454 12.0057 4.23318 12.3001 4.23318Z"/>
+		</symbol>
+		<symbol title="close-icon" id="close-icon" viewBox="0 0 16 16">
+			<path d="M1 15L15 1" stroke="#801DE2" stroke-width="2"/>
+			<path d="M15 15L1 1" stroke="#801DE2" stroke-width="2"/>
+		</symbol>
+		<symbol title="burger-icon" id="burger-icon" viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve">
+			<g transform="matrix(1.5000000000000002,0,0,1.5000000000000002,-96.00000000000017,-96.00000000000009)">
+			<g xmlns="http://www.w3.org/2000/svg">
+				<g>
+					<g>
+						<rect x="0" y="277.333" width="384" height="42.667" fill="#801DE2" data-original="#801DE2" style="" class=""/>
+						<rect x="0" y="170.667" width="384" height="42.667" fill="#801DE2" data-original="#801DE2" style="" class=""/>
+						<rect x="0" y="64" width="384" height="42.667" fill="#801DE2" data-original="#801DE2" style="" class=""/>
+					</g>
+				</g>
+			</g>
+		</symbol>
+		<symbol viewBox="0 0 16 16" title="search-icon" id="search-icon">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.66667C12 9.61218 9.61218 12 6.66667 12C3.72115 12 1.33333 9.61218 1.33333 6.66667C1.33333 3.72115 3.72115 1.33333 6.66667 1.33333C9.61218 1.33333 12 3.72115 12 6.66667ZM10.6206 12.0348C9.5144 12.8509 8.14687 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.14686 12.8509 9.51439 12.0348 10.6206C12.0367 10.6225 12.0386 10.6243 12.0404 10.6262L15.3738 13.9595C15.7643 14.3501 15.7643 14.9832 15.3738 15.3738C14.9833 15.7643 14.3501 15.7643 13.9596 15.3738L10.6262 12.0404C10.6243 12.0385 10.6225 12.0367 10.6206 12.0348Z" fill="#0B0B0C"/>
+		</symbol>
+	</svg>
+	<!-- Icon sprite -->
+
+</head>
+
+<body>
+
+	<aside class="sidebar">
+		<span class="btn-sidebar">
+			<svg class="btn-icon btn-icon1">
+				<use xlink:href="#close-icon"></use>
+			</svg>
+			<svg class="btn-icon btn-icon2">
+				<use xlink:href="#burger-icon"></use>
+			</svg>
+		</span>
+		<div class="mini-sidebar">
+			<p class="sidebar-close-title">меню</p>
+			<svg class="btn-icon-search">
+				<use xlink:href="#search-icon"></use>
+			</svg>
+		</div>
+		<div class="sidebar__logo">
+			<a href="/">
+				<picture>
+					<source srcset="img/logo/logo.webp" type="image/webp">
+					<source srcset="img/logo/logo.png" type="image/png"> 
+					<img src="img/logo/logo.png" alt="">
+				</picture>
+			</a>
+			<p class="tagline">
+				Не позволяй стереотипам думать за тебя!
+			</p>
+		</div>
+		<div class="sidebar__menu">
+			<ul>
+				<li>
+					<a href="#">новости</a>
+				</li>
+				<li>
+					<a href="#">психопросвещение</a>
+				</li>
+				<li>
+					<a href="#">наши проекты</a>
+				</li>
+				<li>
+					<a href="#">личные истории</a>
+				</li>
+				<li>
+					<a href="#">памятка активисту</a>
+				</li>
+				<li>
+					<a href="#">юридическая помощь</a>
+				</li>
+				<li>
+					<a href="#">как присоединиться</a>
+				</li>
+				<li>
+					<a href="#">партнеры</a>
+				</li>
+				<li>
+					<a href="#">контакты</a>
+				</li>
+			</ul>
+		</div>
+		<div class="sidebar__support-project">
+			<a href="#">поддержать проект</a>
+		</div>
+		<div class="sidebar__search">
+			<form class="search-form" action="">
+				<input type="search" name="question" placeholder="Поиск...">
+				<button type="submit" style="background-image: url(img/icons/search-icon.svg);"></button>
+			</form>
+		</div>
+		<div class="sidebar__social-link">
+			<p>Мы в социальных сетях:</p>
+			<div class="social-link-list">
+				<a href="#">
+					<svg class="social-icon">
+						<use xlink:href="#facebook"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social-icon">
+						<use xlink:href="#vk"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social-icon">
+						<use xlink:href="#youtube"></use>
+					</svg>
+				</a>
+				<a href="#">
+					<svg class="social-icon">
+						<use xlink:href="#instagram"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</aside>
+
+	<section class="content">
+		<div class="first-section">
+			<div class="first-section__big-baner" style="background-image: url(img/big-baner.jpg);">
+				<div class="info-block">
+					<p class="info-block__date">22.08.2020</p>
+					<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
+				</div>
+			</div>
+			<div class="first-section__two-baner">
+				<div class="two-baner-wrapper">
+					<div class="small-baner" style="background-image: url(img/big-baner.jpg);">
+						<div class="info-block">
+							<p class="info-block__date">22.08.2020</p>
+							<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
+						</div>
+					</div>
+				</div>
+				<div class="two-baner-wrapper">
+					<div class="small-baner" style="background-image: url(img/big-baner.jpg);">
+						<div class="info-block">
+							<p class="info-block__date">22.08.2020</p>
+							<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="about-us">
+			<div class="title-section">
+				Кто мы?
+			</div>
+			<div class="about-us__text">
+				<p>
+					StopStigma.by – инициатива, реализуемая <a href="#">ОО «Белорусская ассоциация социальных работников»</a>. Мы сообщество единомышленников, которые стремятся изменить положение вещей в отношении психических заболеваний, через повышение информированности о психическом здоровье, борьбу со стигмой в психиатрии и формирование толерантного отношения к людям, столкнувшимся с данной проблемой.
+				</p>
+				<p>
+					Мы верим, что у каждого из нас прямо сейчас есть возможность для того, чтобы сделать первый шаг в борьбе со стигматизацией, связанной с психическими расстройствами и помочь людям, испытывающим проблемы психического здоровья, выйти из изоляции, дать возможность завести друзей, работу и вести полноценную жизнь.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<footer></footer>
+
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

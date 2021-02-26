@@ -1,0 +1,34 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+// Including styles for each element and block
+@import "sidebar"	
+@import "first-section"
+@import "about-us"	
+@import "repeat-style"	
+
+ul
+  list-style-type: none
+
+*
+	margin: 0
+	padding: 0	
+
+.content	
+	width: calc(100% - 275px - 48px)
+	margin-left: 275px
+	padding: 24px 24px 64px
+
+.max-width	
+	width: calc(100% - 48px - 48px)
+	margin-left: 48px
+
+footer
+	height: 598px
+	background-color: #F7F7F7	
+	width: calc(100% - 275px)
+	margin-left: 275px
+
+
+@import "media" // Always at the end

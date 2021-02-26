@@ -1,0 +1,34 @@
+.search-form
+  position: relative
+  input[type=search]
+    width: 100%
+    padding: 12px 19px
+    margin: 0
+    height: 40px
+    border: 1px solid $gray-middle
+    box-shadow: none
+    outline: none
+    font: normal 600 13px/16px $montserrat
+    color: $gray-middle
+    text-transform: uppercase 
+    &::-webkit-input-placeholder
+      font: normal 600 13px/16px $montserrat
+      color: $gray-middle
+      text-transform: uppercase
+  input[type="search"]::-webkit-search-cancel-button
+    display: none !important
+  button[type=submit]
+    position: absolute
+    top: 1px
+    right: 1px
+    padding-right: 55px
+    width: 16px
+    height: calc(100% - 2px)
+    -webkit-box-shadow: none
+    box-shadow: none
+    border: none
+    outline: 0
+    cursor: pointer
+    background-color: $bgc
+    background-repeat: no-repeat
+    background-position: center
