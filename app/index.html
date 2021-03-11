@@ -64,9 +64,13 @@
 				</g>
 			</g>
 		</symbol>
-		<symbol viewBox="0 0 16 16" title="search-icon" id="search-icon">
+		<symbol title="search-icon" id="search-icon" viewBox="0 0 16 16">
 			<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.66667C12 9.61218 9.61218 12 6.66667 12C3.72115 12 1.33333 9.61218 1.33333 6.66667C1.33333 3.72115 3.72115 1.33333 6.66667 1.33333C9.61218 1.33333 12 3.72115 12 6.66667ZM10.6206 12.0348C9.5144 12.8509 8.14687 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.14686 12.8509 9.51439 12.0348 10.6206C12.0367 10.6225 12.0386 10.6243 12.0404 10.6262L15.3738 13.9595C15.7643 14.3501 15.7643 14.9832 15.3738 15.3738C14.9833 15.7643 14.3501 15.7643 13.9596 15.3738L10.6262 12.0404C10.6243 12.0385 10.6225 12.0367 10.6206 12.0348Z" fill="#0B0B0C"/>
 		</symbol>
+		<symbol title="play-icon" id="play-icon" viewBox="0 0 72 72">
+			<path d="M30.5369 25.3113C29.8712 24.8877 29 25.3659 29 26.155V45.845C29 46.6341 29.8712 47.1123 30.5369 46.6887L46.0076 36.8437C46.6251 36.4507 46.6251 35.5493 46.0076 35.1563L30.5369 25.3113Z" fill="white"/>
+			<rect x="1" y="1" width="70" height="70" rx="35" stroke="white" stroke-width="2"/>
+		</symbol>	
 	</svg>
 	<!-- Icon sprite -->
 
@@ -101,69 +105,71 @@
 				Не позволяй стереотипам думать за тебя!
 			</p>
 		</div>
-		<div class="sidebar__menu">
-			<ul>
-				<li>
-					<a href="#">новости</a>
-				</li>
-				<li>
-					<a href="#">психопросвещение</a>
-				</li>
-				<li>
-					<a href="#">наши проекты</a>
-				</li>
-				<li>
-					<a href="#">личные истории</a>
-				</li>
-				<li>
-					<a href="#">памятка активисту</a>
-				</li>
-				<li>
-					<a href="#">юридическая помощь</a>
-				</li>
-				<li>
-					<a href="#">как присоединиться</a>
-				</li>
-				<li>
-					<a href="#">партнеры</a>
-				</li>
-				<li>
-					<a href="#">контакты</a>
-				</li>
-			</ul>
-		</div>
-		<div class="sidebar__support-project">
-			<a href="#">поддержать проект</a>
-		</div>
-		<div class="sidebar__search">
-			<form class="search-form" action="">
-				<input type="search" name="question" placeholder="Поиск...">
-				<button type="submit" style="background-image: url(img/icons/search-icon.svg);"></button>
-			</form>
-		</div>
-		<div class="sidebar__social-link">
-			<p>Мы в социальных сетях:</p>
-			<div class="social-link-list">
-				<a href="#">
-					<svg class="social-icon">
-						<use xlink:href="#facebook"></use>
-					</svg>
-				</a>
-				<a href="#">
-					<svg class="social-icon">
-						<use xlink:href="#vk"></use>
-					</svg>
-				</a>
-				<a href="#">
-					<svg class="social-icon">
-						<use xlink:href="#youtube"></use>
-					</svg>
-				</a>
-				<a href="#">
-					<svg class="social-icon">
-						<use xlink:href="#instagram"></use>
-					</svg>
-				</a>
+		<div class="dropdown-menu">
+			<div class="sidebar__menu">
+				<ul>
+					<li>
+						<a href="#">новости</a>
+					</li>
+					<li>
+						<a href="#">психопросвещение</a>
+					</li>
+					<li>
+						<a href="#">наши проекты</a>
+					</li>
+					<li>
+						<a href="#">личные истории</a>
+					</li>
+					<li>
+						<a href="#">памятка активисту</a>
+					</li>
+					<li>
+						<a href="#">юридическая помощь</a>
+					</li>
+					<li>
+						<a href="#">как присоединиться</a>
+					</li>
+					<li>
+						<a href="#">партнеры</a>
+					</li>
+					<li>
+						<a href="#">контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar__support-project">
+				<a href="#">поддержать проект</a>
+			</div>
+			<div class="sidebar__search">
+				<form class="search-form" action="">
+					<input type="search" name="question" placeholder="Поиск...">
+					<button type="submit" style="background-image: url(img/icons/search-icon.svg);"></button>
+				</form>
+			</div>
+			<div class="sidebar__social-link">
+				<p>Мы в социальных сетях:</p>
+				<div class="social-link-list">
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#youtube"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#instagram"></use>
+						</svg>
+					</a>
+				</div>
 			</div>
 		</div>
 	</aside>
@@ -171,26 +177,35 @@
 	<section class="content">
 		<div class="first-section">
 			<div class="first-section__big-baner" style="background-image: url(img/big-baner.jpg);">
-				<div class="info-block">
+				<svg class="play-icon-hidden">
+					<use xlink:href="#play-icon"></use>
+				</svg>
+				<a href="#" class="info-block">
 					<p class="info-block__date">22.08.2020</p>
 					<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
-				</div>
+				</a>
 			</div>
 			<div class="first-section__two-baner">
 				<div class="two-baner-wrapper">
 					<div class="small-baner" style="background-image: url(img/big-baner.jpg);">
-						<div class="info-block">
+						<svg class="play-icon-hidden">
+							<use xlink:href="#play-icon"></use>
+						</svg>
+						<a href="#" class="info-block">
 							<p class="info-block__date">22.08.2020</p>
 							<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
-						</div>
+						</a>
 					</div>
 				</div>
 				<div class="two-baner-wrapper">
 					<div class="small-baner" style="background-image: url(img/big-baner.jpg);">
-						<div class="info-block">
+						<svg class="play-icon-hidden">
+							<use xlink:href="#play-icon"></use>
+						</svg>
+						<a href="#" class="info-block">
 							<p class="info-block__date">22.08.2020</p>
 							<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -208,6 +223,174 @@
 					Мы верим, что у каждого из нас прямо сейчас есть возможность для того, чтобы сделать первый шаг в борьбе со стигматизацией, связанной с психическими расстройствами и помочь людям, испытывающим проблемы психического здоровья, выйти из изоляции, дать возможность завести друзей, работу и вести полноценную жизнь.
 				</p>
 			</div>
+		</div>
+
+		<div class="psychoeducation">
+			<div class="image-block-left">
+				<img src="img/psychoeducation.png" alt="psychoeducation-image">
+			</div>
+			<div class="info-block-right">
+				<p class="title-block">Психопросвещение</p>
+				<p class="info-block-right__text">
+					Неформальная (вне)психиатрическая платформа "Галасы" – это информационный ресурс целью которого является:
+				</p>
+				<div class="psychoeducation-list">
+					<div class="psychoeducation-list__one-point">
+						<p>Борьба со стигматизацией, обучение активизму в сфере психического здоровья</p>
+					</div>
+					<div class="psychoeducation-list__one-point">
+						<p>Оказание поддержки родственникам людей с психическими заболеваниями</p>
+					</div>
+					<div class="psychoeducation-list__one-point">
+						<p>Организация групп самопомощи и взаимопомощи в Минске и в регионах</p>
+					</div>
+					<div class="psychoeducation-list__one-point">
+						<p>Привлечение специалистов к участию в проектах платформы</p>
+					</div>
+					<div class="psychoeducation-list__one-point">
+						<p>Широкое просвещение по темам психического здоровья, включая предоставление информации о получении квалифицированной психологической и психиатрической помощи</p>
+					</div>
+					<div class="psychoeducation-list__one-point">
+						<p>Подготовка активистов также из числа людей с опытом психического заболевания, готовых открыто делиться своим опытом жизни с болезнью с целью поддержать других людей со схожими проблемами</p>
+					</div>
+				</div>
+				<a href="#" class="wrapper-button">подробнее</a>
+			</div>
+		</div>
+
+		<div class="info-row3 our-projects">
+			<p class="title-block">Наши проекты</p>
+			<div class="projects-row">
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Праект "Партрэт"</p>
+							<p class="project-info">
+								Праект "Партрэт" - гэта першы псіхаактыўны праект у падтрымку людзей з псіхіятрычным дыягназам, арганізаваны Мінскім клубным домам "Открытая душа" і Радыё Свабода.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">(не)псіхіятрычны фестываль "Галасы"</p>
+							<p class="project-info">
+								16 студзеня, у культ.цэнтры Корпус, урач-псіхіятр-нарколаг, псіхатэрапеўт Канстанцін Мінкевіч ( Szczecin, Польшча) распавядзе нам пра антыпсіхіятрычны рух, а таксама адкажа на...
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Галасы. Кіналекторый "ЖЫЦЦЁ з F20"</p>
+							<p class="project-info">
+								Прысвячэнне ахвярам нацызму Вялікай Айчыннай вайны - забітым у псіхіятрычных лякарнях.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="wrapper-button">все наши проекты</a>
+		</div>
+
+		<div class="info-row4 personal-stories">
+			<p class="title-block">Личные истории людей с психическими заболеваниями</p>
+			<div class="projects-row">
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Праект "Партрэт"</p>
+							<p class="project-date">22.08.2020</p>
+							<p class="project-info">
+								Праект "Партрэт" - гэта першы псіхаактыўны праект у падтрымку людзей з псіхіятрычным дыягназам, арганізаваны Мінскім клубным домам "Открытая душа" і Радыё Свабода.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Праект "Партрэт"</p>
+							<p class="project-date">22.08.2020</p>
+							<p class="project-info">
+								Праект "Партрэт" - гэта першы псіхаактыўны праект у падтрымку людзей з псіхіятрычным дыягназам, арганізаваны Мінскім клубным домам "Открытая душа" і Радыё Свабода.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">(не)псіхіятрычны фестываль "Галасы"</p>
+							<p class="project-date">22.08.2020</p>
+							<p class="project-info">
+								16 студзеня, у культ.цэнтры Корпус, урач-псіхіятр-нарколаг, псіхатэрапеўт Канстанцін Мінкевіч ( Szczecin, Польшча) распавядзе нам пра антыпсіхіятрычны рух, а таксама адкажа на...
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Галасы. Кіналекторый "ЖЫЦЦЁ з F20"</p>
+							<p class="project-date">22.08.2020</p>
+							<p class="project-info">
+								Прысвячэнне ахвярам нацызму Вялікай Айчыннай вайны - забітым у псіхіятрычных лякарнях.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="wrapper-button">все личные истории</a>
+		</div>
+
+		<div class="info-row3 memo-activist">
+			<p class="title-block">Памятка активисту</p>
+			<div class="projects-row">
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">Психоактивизм: почему это важно для всех</p>
+							<p class="project-info">
+								Праект "Партрэт" - гэта першы псіхаактыўны праект у падтрымку людзей з псіхіятрычным дыягназам, арганізаваны Мінскім клубным домам "Открытая душа" і Радыё Свабода.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">(вне)психиатрическая платформа «Галасы»: Кто? Где? Когда? Как? А главное з а ч е м? И каким образом принять участие</p>
+							<p class="project-info">
+								16 студзеня, у культ.цэнтры Корпус, урач-псіхіятр-нарколаг, псіхатэрапеўт Канстанцін Мінкевіч ( Szczecin, Польшча) распавядзе нам пра антыпсіхіятрычны рух, а таксама адкажа на...
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="one-project-wrapper">
+					<a href="#" class="one-project">
+						<div class="one-project__image" style="background-image: url(img/big-baner.jpg);"></div>
+						<div class="one-project__info">
+							<p class="project-title">идеи для платформы «Галасы»</p>
+							<p class="project-info">
+								Прысвячэнне ахвярам нацызму Вялікай Айчыннай вайны - забітым у псіхіятрычных лякарнях.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<a href="#" class="wrapper-button">все памятки активисту</a>
 		</div>
 	</section>
 

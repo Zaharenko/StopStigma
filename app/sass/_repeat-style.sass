@@ -1,3 +1,31 @@
 .title-section
   color: $violet-dark
   font: normal 600 24px/31px $montserrat
+
+.title-block
+  color: $violet-dark
+  font: normal 600 24px/31px $lora
+  position: relative
+  padding-bottom: 24px
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    max-width: 140px
+    height: 1px
+    background-color: $violet-middle
+
+.wrapper-button
+  text-decoration: none  
+  text-align: center  
+  font: normal 700 13px/16px $montserrat
+  text-transform: uppercase
+  border: 1px solid $violet-middle
+  display: inline-block
+  padding: 14px 16px
+  transition: .3s
+  &:hover
+    border: 1px solid $violet
+    background-color: $violet-soft  
