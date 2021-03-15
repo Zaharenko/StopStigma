@@ -7,9 +7,63 @@
 @import "first-section"
 @import "about-us"	
 @import "psychoeducation"
+@import "information"
+@import "legal-aid"
+@import "partners-slider"
 @import "info-row3"
 @import "info-row4"
 @import "repeat-style"	
+
+
+// Slider	
+
+.slick-next
+  right: -12px
+
+.slick-prev
+	left: -12px
+	transform: rotate(-180deg)
+
+.slick-next::before, .slick-prev::before
+    content: url('../img/icons/arrow-slider.svg')
+
+.slick-next.slick-disabled::before, .slick-prev.slick-disabled::before
+	display: none
+    
+.slick-dots
+	li
+		margin: 0 6px
+		width: 8px
+		height: 8px
+		button 
+			padding: 0
+			width: 8px
+			height: 8px
+			&::before
+				width: 8px
+				height: 8px
+				border: 1px solid $gray-middle
+				color: #fff
+				border-radius: 100%
+				background-color: #fff
+				font-size: 8px
+				line-height: 8px
+    		content: ""
+
+.slick-dots 
+	li.slick-active 
+		button
+			&::before
+				color: $violet-middle
+				background-color: $violet-middle
+				opacity: 1
+				border: 1px solid $violet-middle
+    		
+				
+
+.slick-initialized 
+	.slick-slide
+    margin: 0 12px
 
 
 ul
@@ -36,8 +90,6 @@ footer
 	background-color: #F7F7F7	
 	width: calc(100% - 275px)
 	margin-left: 275px
-
-
 
 
 @import "media" // Always at the end

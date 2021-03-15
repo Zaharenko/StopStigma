@@ -47,3 +47,19 @@
           &__info
             .project-title
               color: $violet
+
+// Media styles
+@media (max-width: 1239px)
+  .info-row3
+    .projects-row
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(2, 1fr)
+      grid-column-gap: 24px
+      grid-row-gap: 24px
+      .one-project-wrapper:first-child
+        grid-area: 1 / 1 / 2 / 3
+      .one-project-wrapper:nth-child(2)
+        grid-area: 2 / 1 / 3 / 2
+      .one-project-wrapper:last-child
+        grid-area: 2 / 2 / 3 / 3
+

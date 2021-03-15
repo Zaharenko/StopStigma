@@ -1,0 +1,84 @@
+.legal-aid
+  margin-top: 64px
+  &__wrapper
+    margin-top: 24px
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+    .faq
+      width: calc(50% - 12px)
+      margin-right: 12px
+      &__one-block
+        display: inline-block
+        border: 1px solid $gray-middle
+        padding: 17px 21px 17px 17px
+        margin-bottom: 8px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        text-decoration: none
+        transition: .3s
+        p
+          font: normal 500 14px/22.4px $montserrat
+          color: $text
+          transition: .3s
+        .arrow-icon
+          margin-left: 14px
+          height: 14px
+          width: 27px  
+          fill: $gray-middle
+          transition: .3s
+        &:nth-child(6)
+          margin-bottom: 32px
+        &:hover
+          background-color: $violet-soft
+          border-color: $violet
+          p
+            color: $violet
+          .arrow-icon
+            fill: $violet
+    .related-articles
+      width: calc(50% - 12px)
+      margin-left: 12px 
+      &__one-article
+        border-left: 2px solid $violet
+        background-color: $gray-off
+        padding: 21px 28px
+        display: inline-block
+        margin-bottom: 32px
+        text-decoration: none
+        transition: .3s
+        .one-article-title
+          font: normal 700 16px/19.5px $montserrat
+          color: $text
+          text-transform: uppercase
+          transition: .3s
+        .one-article-date
+          margin: 9px 0 14px  
+          font: normal 600 12px/15px $montserrat
+          color: $icon
+        .one-article-text
+          font: normal 500 14px/22.4px $montserrat
+          color: $text
+        &:hover
+          background-color: $violet-soft
+          .one-article-title
+            color: $violet
+        &:nth-child(2)
+          margin-bottom: 16px
+
+// Media styles
+@media (max-width: 1239px)
+  .legal-aid
+    &__wrapper
+      flex-direction: column
+      .faq
+        width: 100%
+        margin-right: 0
+        margin-bottom: 24px
+      .related-articles
+        width: 100%
+        margin-left: 0
