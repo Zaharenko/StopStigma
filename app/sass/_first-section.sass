@@ -106,4 +106,22 @@
   position: absolute
   top: calc(50% - 36px)    
   left: 0
-  right: 0         
+  right: 0  
+
+// Media styles
+@media (max-width: 767px)    
+  .first-section
+    &__big-baner
+      min-height: 350px
+      max-height: 350px
+    &__two-baner     
+      flex-direction: column
+      .two-baner-wrapper
+        width: 100%
+        .small-baner
+          min-height: 300px
+          max-height: 300px
+    .two-baner-wrapper:first-child
+      margin: 0 0 24px
+    .two-baner-wrapper:last-child
+      margin: 0    
