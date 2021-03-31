@@ -1,31 +1,7 @@
-@import "search-input"
-
-.mini-sidebar  
-  display: none
-  .sidebar-close-title
-    transform: rotate(-90deg)
-    text-transform: uppercase
-    font: normal 600 13px/6px $montserrat
-    color: #000
-    position: absolute
-    top: 97px
-    right: 0
-    left: 0
-  .btn-icon-search
-    position: absolute
-    left: calc(50% - 8px)
-    top: 150px
-    width: 16px
-    height: 16px
-    padding-top: 15px
-    border-top: 1px solid #E0E0E0 
-    cursor: pointer 
-
-
-.mini-sidebar-active  
-  display: inline-block  
+@import "search-input" 
 
 .btn-sidebar
+  display: none
   position: absolute
   top: 24px
   right: 16px
@@ -177,8 +153,6 @@
     border-right: none
     border-bottom: 1px solid rgba(149, 149, 149, .4)
     padding: 0
-    .mini-sidebar
-      display: none
     &__logo
       margin: 0
       padding: 10px 0 10px 15px
@@ -221,13 +195,14 @@
       height: 100%
       min-height: 500px
       position: absolute
-      top: 85px
+      top: 84px
       left: 0
       right: 0
       z-index: 98
       background-color: $bgc
       border-bottom: 1px solid rgba(149, 149, 149, .4)
     .btn-sidebar
+      display: inline-block
       .btn-icon1
         display: none
       .btn-icon2
