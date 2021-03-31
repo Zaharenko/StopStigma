@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>StopStigma News</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+	<!-- Template Basic Images Start -->
+	<link rel="icon" href="img/favicon/favicon.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="StopStigma" />
+	<meta property="og:title" content=""/>
+	<meta property="og:description" content=""/>
+	<meta property="og:image" content="img/logo.png"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "" />
+	<!-- Open Graph End-->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/main.min.css">
+	<!-- Styles End -->
+
+	<!-- Icon sprite -->
+	<svg style="display: none;">
+		<symbol title="facebook" id="facebook" iewBox="0 0 8 16">
+			<path d="M5 5.5V3.5C5 2.948 5.448 2.5 6 2.5H7V0H5C3.343 0 2 1.343 2 3V5.5H0V8H2V16H5V8H7L8 5.5H5Z"/>
+		</symbol>
+		<symbol title="vk" id="vk" viewBox="0 0 19 11">
+			<path d="M18.1 0.74C18.23 0.32 18.1 0 17.48 0H15.46C14.94 0 14.71 0.27 14.58 0.57C14.58 0.57 13.55 3.08 12.09 4.72C11.61 5.19 11.4 5.34 11.14 5.34C11.01 5.34 10.8 5.19 10.8 4.76V0.74C10.8 0.23 10.68 0 10.25 0H7.06C6.74 0 6.55 0.24 6.55 0.47C6.55 0.95 7.3 1.07 7.35 2.44V5.42C7.35 6.08 7.23 6.2 6.98 6.2C6.3 6.2 4.62 3.67 3.63 0.79C3.43 0.23 3.24 0 2.72 0H0.69C0.12 0 4.76837e-08 0.27 4.76837e-08 0.57C4.76837e-08 1.11 0.69 3.77 3.2 7.29C4.87 9.7 7.23 11 9.38 11C10.67 11 10.83 10.71 10.83 10.21V8.39C10.83 7.82 10.95 7.7 11.36 7.7C11.66 7.7 12.17 7.85 13.37 9C14.75 10.38 14.97 11 15.75 11H17.77C18.35 11 18.64 10.71 18.48 10.14C18.3 9.57 17.64 8.74 16.77 7.76C16.3 7.21 15.59 6.61 15.37 6.3C15.07 5.92 15.16 5.75 15.37 5.4C15.37 5.4 17.84 1.93 18.1 0.74Z"/>
+		</symbol>
+		<symbol title="youtube" id="youtube" viewBox="0 0 18 12">
+			<path d="M17.235 1.15636C16.7467 0.314182 16.2169 0.159273 15.138 0.100364C14.0603 0.0294546 11.3501 0 9.00225 0C6.64987 0 3.93862 0.0294546 2.862 0.0992728C1.78537 0.159273 1.25437 0.313091 0.761625 1.15636C0.25875 1.99745 0 3.44618 0 5.99673C0 5.99891 0 6 0 6C0 6.00218 0 6.00327 0 6.00327V6.00546C0 8.54509 0.25875 10.0047 0.761625 10.8371C1.25437 11.6793 1.78425 11.832 2.86087 11.9029C3.93863 11.964 6.64987 12 9.00225 12C11.3501 12 14.0602 11.964 15.1391 11.904C16.218 11.8331 16.7479 11.6804 17.2361 10.8382C17.7435 10.0058 18 8.54618 18 6.00655C18 6.00655 18 6.00327 18 6.00109C18 6.00109 18 5.99891 18 5.99782C18 3.44618 17.7435 1.99745 17.235 1.15636ZM6.75 9.27273V2.72727L12.375 6L6.75 9.27273Z"/>
+		</symbol>
+		<symbol title="instagram" id="instagram" viewBox="0 0 16 16">
+			<path d="M11 0H5C2.239 0 0 2.239 0 5V11C0 13.761 2.239 16 5 16H11C13.761 16 16 13.761 16 11V5C16 2.239 13.761 0 11 0ZM14.5 11C14.5 12.93 12.93 14.5 11 14.5H5C3.07 14.5 1.5 12.93 1.5 11V5C1.5 3.07 3.07 1.5 5 1.5H11C12.93 1.5 14.5 3.07 14.5 5V11Z"/>
+			<path d="M8 4C5.791 4 4 5.791 4 8C4 10.209 5.791 12 8 12C10.209 12 12 10.209 12 8C12 5.791 10.209 4 8 4ZM8 10.5C6.622 10.5 5.5 9.378 5.5 8C5.5 6.621 6.622 5.5 8 5.5C9.378 5.5 10.5 6.621 10.5 8C10.5 9.378 9.378 10.5 8 10.5Z"/>
+			<path d="M12.3001 4.23318C12.5945 4.23318 12.8331 3.99454 12.8331 3.70018C12.8331 3.40581 12.5945 3.16718 12.3001 3.16718C12.0057 3.16718 11.7671 3.40581 11.7671 3.70018C11.7671 3.99454 12.0057 4.23318 12.3001 4.23318Z"/>
+		</symbol>
+		<symbol title="close-icon" id="close-icon" viewBox="0 0 16 16">
+			<path d="M1 15L15 1" stroke="#801DE2" stroke-width="2"/>
+			<path d="M15 15L1 1" stroke="#801DE2" stroke-width="2"/>
+		</symbol>
+		<symbol title="burger-icon" id="burger-icon" viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve">
+			<g transform="matrix(1.5000000000000002,0,0,1.5000000000000002,-96.00000000000017,-96.00000000000009)">
+			<g xmlns="http://www.w3.org/2000/svg">
+				<g>
+					<g>
+						<rect x="0" y="277.333" width="384" height="42.667" fill="#801DE2" data-original="#801DE2"/>
+						<rect x="0" y="170.667" width="384" height="42.667" fill="#801DE2" data-original="#801DE2"/>
+						<rect x="0" y="64" width="384" height="42.667" fill="#801DE2" data-original="#801DE2"/>
+					</g>
+				</g>
+			</g>
+		</symbol>
+		<symbol title="search-icon" id="search-icon" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.66667C12 9.61218 9.61218 12 6.66667 12C3.72115 12 1.33333 9.61218 1.33333 6.66667C1.33333 3.72115 3.72115 1.33333 6.66667 1.33333C9.61218 1.33333 12 3.72115 12 6.66667ZM10.6206 12.0348C9.5144 12.8509 8.14687 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.14686 12.8509 9.51439 12.0348 10.6206C12.0367 10.6225 12.0386 10.6243 12.0404 10.6262L15.3738 13.9595C15.7643 14.3501 15.7643 14.9832 15.3738 15.3738C14.9833 15.7643 14.3501 15.7643 13.9596 15.3738L10.6262 12.0404C10.6243 12.0385 10.6225 12.0367 10.6206 12.0348Z" fill="#0B0B0C"/>
+		</symbol>
+		<symbol title="play-icon" id="play-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M30.5369 25.3113C29.8712 24.8877 29 25.3659 29 26.155V45.845C29 46.6341 29.8712 47.1123 30.5369 46.6887L46.0076 36.8437C46.6251 36.4507 46.6251 35.5493 46.0076 35.1563L30.5369 25.3113Z" fill="white"/>
+			<rect x="1" y="1" width="70" height="70" rx="35" stroke="white" stroke-width="2"/>
+		</symbol>
+		<symbol title="right-arrow" id="right-arrow" viewBox="0 0 14 14">
+			<path d="M0.333252 5.93317V7.59984H10.3333L5.74992 12.1832L6.93325 13.3665L13.5333 6.76651L6.93325 0.166504L5.74992 1.34984L10.3333 5.93317H0.333252Z"/>
+		</symbol>
+		<symbol title="add-user" id="add-user" viewBox="0 0 20 20">
+			<path d="M20.001 4H17.001V1H15.001V4H12.001V6H15.001V9H17.001V6H20.001V4Z"/>
+			<path d="M5.00098 6C6.65783 6 8.00098 4.65685 8.00098 3C8.00098 1.34315 6.65783 0 5.00098 0C3.34412 0 2.00098 1.34315 2.00098 3C2.00098 4.65685 3.34412 6 5.00098 6Z"/>
+			<path d="M5.00098 6C2.24398 6 0.000976562 8.243 0.000976562 11V14C0.000976562 14.552 0.448977 15 1.00098 15H2.00098V19C2.00098 19.552 2.44898 20 3.00098 20H7.00098C7.55298 20 8.00098 19.552 8.00098 19V15H9.00098C9.55298 15 10.001 14.552 10.001 14V11C10.001 8.243 7.75798 6 5.00098 6Z"/>
+		</symbol>
+		<symbol title="around-user" id="around-user" viewBox="0 0 20 24">
+			<path d="M10 5.99902C11.654 5.99902 13 4.65302 13 2.99902C13 1.34502 11.654 -0.000976562 10 -0.000976562C8.346 -0.000976562 7 1.34602 7 3.00002C7 4.65402 8.346 5.99902 10 5.99902Z"/>
+			<path d="M6 15H7V19C7 19.553 7.448 20 8 20H12C12.552 20 13 19.553 13 19V15H14C14.552 15 15 14.553 15 14V12C15 9.244 12.757 7 10 7C7.243 7 5 9.244 5 12V14C5 14.552 5.448 15 6 15Z"/>
+			<path d="M16.34 16.823L15.762 18.737C17.611 19.296 18 19.903 18 20C18 20.514 15.25 22 10 22C4.75 22 2 20.514 2 20C2 19.898 2.417 19.262 4.396 18.69L3.841 16.769C0.667 17.685 0 19.031 0 20C0 22.748 5.184 24 10 24C14.816 24 20 22.748 20 20C20 19.055 19.365 17.736 16.34 16.823Z"/>
+		</symbol>
+		<symbol title="group-user" id="group-user" viewBox="0 0 24 24">
+			<path d="M4.00098 22C4.00098 21.298 4.12798 20.627 4.35098 20H3.33498C1.49398 20 0.000976562 21.159 0.000976562 23V24H4.00098V22Z"/>
+			<path d="M7.59299 16.509C7.59299 16.506 7.59399 16.503 7.59399 16.5C7.59399 15.119 6.47399 14 5.09299 14C3.71299 14 2.59399 15.119 2.59399 16.5C2.59399 17.791 3.57499 18.84 4.82899 18.974C5.46699 17.888 6.43299 17.02 7.59299 16.509Z"/>
+			<path d="M19.093 14C17.713 14 16.594 15.119 16.594 16.5C16.594 16.535 16.603 16.568 16.604 16.603C17.684 17.125 18.582 17.959 19.184 18.992C20.522 18.943 21.594 17.85 21.594 16.501C21.594 15.119 20.474 14 19.093 14Z"/>
+			<path d="M20.6669 20H19.6509C19.8739 20.627 20.0009 21.298 20.0009 22V24H24.0009V23C24.0009 21.159 22.5079 20 20.6669 20Z"/>
+			<path d="M6.00098 24.0002H18.001V22.0002C18.001 20.0842 16.652 18.4872 14.854 18.0962C14.043 18.6622 13.062 19.0002 12.001 19.0002C10.94 19.0002 9.95798 18.6622 9.14798 18.0962C7.34998 18.4872 6.00098 20.0842 6.00098 22.0002V24.0002Z"/>
+			<path d="M12.001 17C13.6578 17 15.001 15.6569 15.001 14C15.001 12.3431 13.6578 11 12.001 11C10.3441 11 9.00098 12.3431 9.00098 14C9.00098 15.6569 10.3441 17 12.001 17Z"/>
+			<path d="M17.001 0H7.00098C5.89598 0 5.00098 0.896 5.00098 2V13L8.00098 10H17.001C18.106 10 19.001 9.104 19.001 8V2C19.001 0.896 18.106 0 17.001 0ZM16.001 8H8.00098V6H16.001V8ZM16.001 4H8.00098V2H16.001V4Z"/>
+		</symbol>
+		<symbol title="share-user" id="share-user" viewBox="0 0 20 21">
+			<path d="M11.01 13.9961H9.01001C6.25301 13.9961 4.01001 16.2391 4.01001 18.9961V20.9961H16.01V18.9961C16.01 16.2391 13.767 13.9961 11.01 13.9961Z"/>
+			<path d="M6.35406 12.5228C5.10406 10.7658 5.25406 8.31284 6.82906 6.73884C8.58306 4.98484 11.4381 4.98484 13.1921 6.73884C14.7661 8.31284 14.9171 10.7658 13.6681 12.5228C14.2971 12.7818 14.8801 13.1298 15.4011 13.5508C17.1021 11.0248 16.8391 7.55884 14.6071 5.32384C12.0731 2.78884 7.94906 2.79084 5.41406 5.32384C3.18306 7.55784 2.91906 11.0238 4.62006 13.5508C5.14206 13.1288 5.72506 12.7818 6.35406 12.5228Z"/>
+			<path d="M3.52206 14.664C2.54506 13.311 2.01006 11.697 2.01006 9.99599C2.01006 7.85799 2.84306 5.84999 4.35406 4.33899C7.47306 1.21999 12.5471 1.21999 15.6671 4.33899C18.4761 7.14999 18.7461 11.538 16.4971 14.663C16.9411 15.225 17.3001 15.857 17.5561 16.541C20.9621 12.618 20.8101 6.65499 17.0801 2.92399C13.1811 -0.974012 6.83706 -0.974012 2.93806 2.92399C1.04906 4.81399 0.00805664 7.32499 0.00805664 9.99599C0.00805664 12.43 0.880057 14.725 2.46106 16.542C2.71906 15.858 3.07706 15.226 3.52206 14.664Z"/>
+			<path d="M10.01 12.9961C11.6669 12.9961 13.01 11.6529 13.01 9.99609C13.01 8.33924 11.6669 6.99609 10.01 6.99609C8.35316 6.99609 7.01001 8.33924 7.01001 9.99609C7.01001 11.6529 8.35316 12.9961 10.01 12.9961Z"/>
+		</symbol>
+	</svg>
+	<!-- Icon sprite -->
+
+</head>
+
+<body>
+
+	<aside class="sidebar">
+		<span class="btn-sidebar">
+			<svg class="btn-icon btn-icon1">
+				<use xlink:href="#close-icon"></use>
+			</svg>
+			<svg class="btn-icon btn-icon2">
+				<use xlink:href="#burger-icon"></use>
+			</svg>
+		</span>
+		<div class="sidebar__logo">
+			<a href="/">
+				<picture>
+					<source srcset="img/logo/logo.webp" type="image/webp">
+					<source srcset="img/logo/logo.png" type="image/png"> 
+					<img src="img/logo/logo.png" alt="">
+				</picture>
+			</a>
+			<p class="tagline">
+				Не позволяй стереотипам думать за тебя!
+			</p>
+		</div>
+		<div class="dropdown-menu">
+			<div class="sidebar__menu">
+				<ul>
+					<li>
+						<a href="news.html">новости</a>
+					</li>
+					<li>
+						<a href="#">психопросвещение</a>
+					</li>
+					<li>
+						<a href="#">наши проекты</a>
+					</li>
+					<li>
+						<a href="#">личные истории</a>
+					</li>
+					<li>
+						<a href="#">памятка активисту</a>
+					</li>
+					<li>
+						<a href="#">юридическая помощь</a>
+					</li>
+					<li>
+						<a href="#">как присоединиться</a>
+					</li>
+					<li>
+						<a href="#">партнеры</a>
+					</li>
+					<li>
+						<a href="#">контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar__support-project">
+				<a href="#">поддержать проект</a>
+			</div>
+			<div class="sidebar__search">
+				<form class="search-form" action="">
+					<input type="search" name="question" placeholder="Поиск...">
+					<button type="submit" style="background-image: url(img/icons/search-icon.svg);"></button>
+				</form>
+			</div>
+			<div class="sidebar__social-link">
+				<p>Мы в социальных сетях:</p>
+				<div class="social-link-list">
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#facebook"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#vk"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#youtube"></use>
+						</svg>
+					</a>
+					<a href="#">
+						<svg class="social-icon">
+							<use xlink:href="#instagram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</aside>
+
+	<main class="content">
+
+    <section class="header-page">
+      <ul class="breadcrumbs">
+        <li>
+          <a href="/">главная</a>
+        </li>
+        <li>
+          <a href="#">новости</a>
+        </li>
+      </ul>
+      <div class="title-search">
+        <h1>Новости</h1>
+        <div class="sidebar__search">
+          <form class="search-form" action="">
+            <input type="search" name="question" placeholder="Поиск...">
+            <button type="submit" style="background-image: url(img/icons/search-icon1.svg);"></button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="first-section">
+			<div class="first-section__big-baner" style="background-image: url(img/big-baner.jpg);">
+				<svg class="play-icon-hidden">
+					<use xlink:href="#play-icon"></use>
+				</svg>
+				<a href="#" class="info-block">
+					<p class="info-block__date">22.08.2020</p>
+					<p class="info-block__title">Как помочь близкому человеку в кризисном состоянии</p>
+          <!-- I created this block, but for now I have hidden it. We don't need it yet, but it may come in handy later. -->
+          <!-- <p class="tags">
+            <span>новости</span>
+            <span>видео</span>
+          </p> -->
+				</a>
+			</div>
+			<div class="first-section__last-baner">
+				<div class="last-news">
+          <a href="one-news.html"  class="title">
+            Джон Принглс: «Случай шизофрении»
+          </a>
+          <div class="date">
+            22.08.2020
+          </div>
+          <div class="information">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae doloribus ratione quas commodi tempora mollitia error sed ex, molestias quia aspernatur excepturi debitis facere. Possimus, exercitationem. Ea et eum ullam nihil in, ipsum soluta veniam officia atque nulla esse quo aspernatur iste. Qui deleniti natus doloremque necessitatibus tempore. Ipsam quasi autem ad voluptates, earum perspiciatis eligendi dolorem voluptatum veniam aliquam! Placeat necessitatibus porro aspernatur aut animi quasi nihil eum nobis! Consequuntur ratione voluptatibus, delectus sint cum similique omnis magni autem repudiandae quo sed accusamus necessitatibus quisquam! Exercitationem sapiente vel sint, fugiat eaque voluptatem incidunt ipsa, quidem reiciendis magni voluptatum!
+          </div>
+        </div>
+        <div class="last-news">
+          <a href="#"  class="title">
+            Джон Принглс: «Случай шизофрении»
+          </a>
+          <div class="date">
+            22.08.2020
+          </div>
+          <div class="information">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quod qui omnis in, cumque sapiente nulla quis necessitatibus dolore ullam, odio quasi voluptatem veniam eaque molestias. Natus voluptates aliquam dicta dolorem nihil delectus assumenda! Veritatis fugit eum excepturi! Alias fugit deleniti exercitationem temporibus, pariatur ratione aperiam voluptates at possimus vel.
+          </div>
+        </div>
+        <div class="last-news">
+          <img src="img/big-baner.jpg" alt="">
+          <a href="#" class="title">
+            Джон Принглс: «Случай шизофрении»
+          </a>
+          <div class="date">
+            22.08.2020
+          </div>
+          <div class="information">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quod qui omnis in, cumque sapiente nulla quis necessitatibus dolore ullam, odio quasi voluptatem veniam eaque molestias. Natus voluptates aliquam dicta dolorem nihil delectus assumenda! Veritatis fugit eum excepturi! Alias fugit deleniti exercitationem temporibus, pariatur ratione aperiam voluptates at possimus vel.
+          </div>
+        </div>
+			</div>
+		</div>
+
+    <section class="list-news-pagination">
+      <div class="list-news-pagination__news">
+        <ul class="list-news">
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+          <li class="one-news">
+            <img src="img/big-baner.jpg" alt="">
+            <a href="#" class="one-news-text">
+              <div class="title">
+                Джон Принглс: «Случай шизофрении»
+              </div>
+              <div class="date">
+                22.08.2020
+              </div>
+              <div class="text">
+                Больным шизофренией свойственно оставлять за собой шлейф людей, которые праведно или отчаянно чувствуют, что «сделали всё что могли» и что теперь настала очередь другого. Больные шизофренией подвергаются нарушениям прав человека как в стенах психиатрических учреждений...
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="pagination">
+          <ul class="pagination-number">
+            <li><a href="#">«</a></li>
+             <li><a href="#" class="active">1</a></li>
+             <li><a href="#">2</a></li>
+             <li><a href="#">3</a></li>
+             <li><a href="#">4</a></li>
+             <li><a href="#">5</a></li>
+             <li><a href="#">6</a></li>
+             <li><a href="#">7</a></li>
+             <li><a href="#">»</a></li>
+           </ul>
+        </div>
+      </div>
+      <div class="fixed-information">
+        <div class="fixed-information__wrapper">
+          <div class="img-info-btn" style="background-image: url(img/big-baner.jpg);">
+            <p>
+              Мы работаем для того, чтобы каждый человек столкнувшийся с проблемой психического здоровья, имел шанс на поддержку и восстановление. Наша деятельность невозможна без таких щедрых людей, как вы. 
+            </p>
+            <a href="">поддержать проект</a>
+          </div>
+          <div class="phone-info">
+            1
+          </div>
+        </div>
+      </div>
+    </section>
+
+	</main>
+
+	<footer></footer>
+
+	<!--[if lt IE 9]>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
