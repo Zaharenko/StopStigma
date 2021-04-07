@@ -44,13 +44,13 @@
     margin-bottom: 34px
     li
       list-style-type: none
-      padding: 0 0 0 12px
+      padding: 0 12px
       a
         text-decoration: none
         position: relative
         font: normal 700 10px/12px $montserrat
         text-transform: uppercase
-        color: $gray-middle
+        color: $violet
         transition: .3s
         &:hover
           color: $violet
@@ -62,29 +62,38 @@
     li:first-child
       padding: 0 12px 0 0 
       a
-        color: $violet
         &::before
           display: none
+    li:last-child
+      a
+        color: $gray-middle      
   .title-search
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: flex-start
-    h1
-      color: $violet-dark
-      font: normal 700 24px/31px $lora
-      padding-bottom: 24px
-      position: relative
-      &::before
-        content: ''
-        position: absolute
-        bottom: 0
-        left: 0
-        width: 100%
-        max-width: 140px
-        min-width: 140px
-        height: 1px
-        background-color: $violet-middle
+    &__info
+      h1
+        color: $violet-dark
+        font: normal 700 24px/31px $lora
+        padding-bottom: 24px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          max-width: 140px
+          min-width: 140px
+          height: 1px
+          background-color: $violet-middle   
+      .date
+        color: $gray-middle
+        font: normal 600 12px/15px $montserrat
+        margin-bottom: 18px
+      .social-link-list
+        padding: 0  
     .sidebar__search
       max-width: 429px
       min-width: 429px
@@ -93,6 +102,11 @@
       .search-form 
         input[type=search] 
           border: 1px solid $violet-middle
+  .title-search-one-news
+    h1
+      padding-bottom: 9px
+      &::before
+        display: none 
 
 .list-news-pagination
   width: 100%
@@ -103,7 +117,7 @@
   margin-top: 64px
   position: relative
   &__news
-    width: calc(70% - 48px)
+    width: calc(65% - 48px)
     margin-right: 48px
     .list-news
       .one-news
@@ -142,7 +156,7 @@
           height: 100%
           max-height: 180px
   .fixed-information
-    width: 30%
+    width: 35%
     position: sticky
     top: 0
     right: 0  
@@ -161,6 +175,9 @@
         position: relative
         font: normal 500 14px/22px $montserrat
         color: $bgc
+        p
+          color: $bgc
+          z-index: 1
         a
           display: inline-block
           margin-top: 24px
@@ -187,5 +204,91 @@
       .phone-info
         border: 16px solid $violet-middle
         padding: 30px  
-
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        p:first-child
+          font: normal 700 16px/20px $montserrat
+          color: $text
+          text-transform: uppercase
+        a:nth-child(2)
+          display: inline-block
+          text-decoration: none
+          color: $violet-dark
+          font: normal 600 51px/64px $lora 
+          margin: 20px 0 24px
+          span
+            font: normal 600 16px/20px $lora 
+        p:nth-child(3) 
+          font: normal 400 12px/17px $montserrat
+          color: $icon
+          span
+            display: inline-block 
+        a:nth-child(4)    
+          display: inline-block
+          text-decoration: none
+          background-color: $bgc
+          padding: 14px 16px
+          margin: 24px auto 0
+          text-transform: uppercase 
+          font: normal 700 13px/16px $montserrat
+          color: $icon
+          border: 1px solid $violet-middle
+          transition: .3s
+          &:hover
+            color: $bgc
+            background-color: $violet-middle
+  .pagination
+    margin-bottom: 80px
+    .pagination-number
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      li
+        margin-right: 8px
+        text-align: center
+        background-color: $violet
+        border-radius: 100%
+        width: 32px
+        height: 32px
+        display: flex
+        justify-content: center
+        align-items: center
+        transition: .3s
+        a
+          text-decoration: none
+          font: normal 700 16px/20px $montserrat
+          color: $bgc
+          .icon
+            fill: #e0e0e0
+            width: 16px
+            height: 10px
+            transition: .3s
+        &:hover
+          .icon
+            fill: $violet    
+        &:first-child
+          margin-right: 45px
+          background-color: $bgc
+          &:hover
+            background-color:  transparent
+          a
+            .icon
+              transform: rotate(180deg)
+        &:last-child
+          margin-left: 45px
+          background-color: $bgc
+          &:hover
+            background-color:  transparent
+        &:hover
+          background-color:  $violet-middle   
+      .active
+        background-color: $bgc
+        &:hover
+          a
+            color: $bgc
+        a
+          color: $violet-middle
 

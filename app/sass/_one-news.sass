@@ -1,0 +1,135 @@
+.one-news
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: flex-start
+  width: 100%
+  &__content
+    width: calc(100% - 429px - 48px)
+    margin-right: 48px
+    font: normal 500 14px/22px $montserrat 
+    color: $text
+    .fade-one-news
+      position: relative
+      padding-bottom: 35px
+      margin: 0 0 35px
+      .one-slide
+        margin: 0
+        img
+          height: 100%
+          max-height: 340px
+          width: 100%
+          display: block
+          object-fit: cover
+          object-fit: center
+      .slick-arrow
+        position: absolute
+        bottom: 0
+        top: auto
+        transform: none
+      .slick-prev
+        left: calc(50% - 30px)  
+        transform: rotate(180deg)
+      .slick-next
+        right: calc(50% - 30px)  
+    p
+      margin-bottom: 35px
+    p:last-child
+      margin-bottom: 0 
+    .author
+      display: block
+      color: $violet
+      font: normal 500 14px/22px $montserrat 
+      text-decoration: none
+      margin-bottom: 45px
+    .btn-back
+      display: inline-block
+      color: $violet
+      font: normal 700 10px/12px $montserrat 
+      text-decoration: none 
+      padding: 14px 18px
+      text-transform: uppercase
+      border: 1px solid $violet-middle
+      color: $text
+      transition: .3s
+      .icon
+        transform: rotate(-180deg)
+        width: 10px
+        height: 10px
+        margin-right: 13px
+        fill: $text
+        transition: .3s
+      &:hover  
+        background-color: $violet-middle
+        color: $bgc
+        .icon
+          fill: $bgc
+    .image-popup  
+      display: inline-block
+      margin-bottom: 35px 
+      width: 100%
+      img
+        height: 100%
+        max-height: 340px
+        width: 100%
+        display: block
+        object-fit: cover
+        object-position: center
+  &__auxiliary-unit
+    margin-top: 0
+    max-width: 429px
+    min-width: 429px  
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    .last-post
+      margin-top: -55px
+      p
+        color: $violet-dark
+        font: normal 700 24px/31px $lora
+        padding-bottom: 24px
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          max-width: 140px
+          min-width: 140px
+          height: 1px
+          background-color: $violet-middle 
+      .one-last-post
+        margin-top: 30px
+        padding-bottom: 30px
+        border-bottom: 1px solid #c4c4c4
+        text-decoration: none
+        display: inline-block
+        &:hover
+          .title
+            color: $violet-middle
+        &:last-child
+          padding-bottom: 0
+          border-bottom: none    
+        .title
+          padding-bottom: 12px
+          font: normal 700 16px/19.5px $montserrat
+          color: $text
+          text-transform: uppercase
+          transition: .3s
+        .date
+          padding-bottom: 15px
+          font: normal 600 12px/15px $montserrat
+          color: $gray-middle   
+        .text
+          font: normal 500 14px/22.4px $montserrat
+          color: $text  
+          overflow: hidden
+          text-overflow: ellipsis
+          display: -webkit-box
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical    
+    .fixed-information
+      width: 100%
+      margin-top: 32px

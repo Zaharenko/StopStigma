@@ -287,7 +287,8 @@
   .mfp-title {
     text-align: left;
     line-height: 18px;
-    color: #F3F3F3;
+    color: #F0F0F0;
+    font: normal 500 22px/32px 'Montserrat', sans-serif;
     word-wrap: break-word;
     padding-right: 36px; }
   
