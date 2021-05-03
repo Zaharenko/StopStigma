@@ -1,0 +1,40 @@
+.list-partners
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: auto
+  grid-column-gap: 24px
+  grid-row-gap: 24px
+  .partner
+    background: $bgc
+    border: 1px solid #E0E0E0
+    box-sizing: border-box
+    height: calc(170px + 157px)
+    img
+      width: 100%
+      max-height: 170px
+    .info-partner
+      padding: 16px
+      .name-partner
+        font: normal 600 13px/16px $montserrat
+        color: $text
+        text-transform: uppercase
+        margin-bottom: 16px
+      .desc-partner
+        overflow: hidden
+        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 5
+        -webkit-box-orient: vertical
+        transition: .3s
+  .active-partner
+    z-index: 9
+    .info-partner
+      background-color: $bgc
+      border-left: 1px solid $violet-middle
+      border-right: 1px solid $violet-middle
+      border-bottom: 1px solid $violet-middle
+      box-shadow: 10px 15px 15px 0px rgba(128, 29, 226, 0.2)
+      .name-partner
+        color: $violet-middle
+      .desc-partner
+        -webkit-line-clamp: inherit

@@ -239,56 +239,57 @@
           &:hover
             color: $bgc
             background-color: $violet-middle
-  .pagination
-    margin-bottom: 80px
-    .pagination-number
+  
+.pagination
+  margin-bottom: 80px
+  .pagination-number
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    li
+      margin-right: 8px
+      text-align: center
+      background-color: $violet
+      border-radius: 100%
+      width: 32px
+      height: 32px
       display: flex
-      flex-direction: row
       justify-content: center
       align-items: center
-      li
-        margin-right: 8px
-        text-align: center
-        background-color: $violet
-        border-radius: 100%
-        width: 32px
-        height: 32px
-        display: flex
-        justify-content: center
-        align-items: center
-        transition: .3s
-        a
-          text-decoration: none
-          font: normal 700 16px/20px $montserrat
-          color: $bgc
-          .icon
-            fill: #e0e0e0
-            width: 16px
-            height: 10px
-            transition: .3s
-        &:hover
-          .icon
-            fill: $violet    
-        &:first-child
-          margin-right: 45px
-          background-color: $bgc
-          &:hover
-            background-color:  transparent
-          a
-            .icon
-              transform: rotate(180deg)
-        &:last-child
-          margin-left: 45px
-          background-color: $bgc
-          &:hover
-            background-color:  transparent
-        &:hover
-          background-color:  $violet-middle   
-      .active
+      transition: .3s
+      a
+        text-decoration: none
+        font: normal 700 16px/20px $montserrat
+        color: $bgc
+        .icon
+          fill: #e0e0e0
+          width: 16px
+          height: 10px
+          transition: .3s
+      &:hover
+        .icon
+          fill: $violet    
+      &:first-child
+        margin-right: 45px
         background-color: $bgc
         &:hover
-          a
-            color: $bgc
+          background-color:  transparent
         a
-          color: $violet-middle
+          .icon
+            transform: rotate(180deg)
+      &:last-child
+        margin-left: 45px
+        background-color: $bgc
+        &:hover
+          background-color:  transparent
+      &:hover
+        background-color:  $violet-middle   
+    .active
+      background-color: $bgc
+      &:hover
+        a
+          color: $bgc
+      a
+        color: $violet-middle
 

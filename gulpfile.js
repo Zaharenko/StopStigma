@@ -32,7 +32,7 @@ gulp.task('browser-sync', function() {
 
 // Sass|Scss Styles
 gulp.task('styles', function() {
-	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+	return gulp.src('app/'+syntax+'/*.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
