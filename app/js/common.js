@@ -111,7 +111,7 @@ $(document).ready(function () {
         balloonContent: 'Адрес'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: 'img/logo/logo.png',
+        iconImageHref: 'https://zaharenko.github.io/StopStigma/app/img/logo/logo.png',
         iconImageSize: [100, 100],
         iconImageOffset: [-75, -100]
 
