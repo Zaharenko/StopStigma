@@ -111,7 +111,7 @@ $(document).ready(function () {
         balloonContent: 'Адрес'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: '../img/logo/logo.png',
+        iconImageHref: '/StopStigma/img/logo/logo.png',
         iconImageSize: [100, 100],
         iconImageOffset: [-75, -100]
 
