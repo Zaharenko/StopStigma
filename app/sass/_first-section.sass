@@ -12,14 +12,6 @@
     background-repeat: no-repeat
     margin-bottom: 24px
     position: relative
-    &::after
-      content: url('')
-      position: absolute
-      top: calc(50% - 20px)
-      left: 0
-      right: 0
-      width: 10px
-      height: 10px
     .play-icon-hidden
       position: absolute
       top: calc(50% - 36px)    
@@ -30,6 +22,7 @@
       margin: 0 auto
     .info-block
       text-decoration: none
+      transition: .3s
       position: absolute
       bottom: 0
       left: 0
@@ -43,6 +36,7 @@
       justify-content: flex-end
       align-items: flex-start
       padding: 0 65px 29px
+      z-index: 1
       &__date
         font: normal 600 12px/15px $montserrat
         color: $bgc
@@ -66,7 +60,8 @@
           text-transform: uppercase
           border-radius: 2px
         span:last-child
-          margin-right: 0  
+          margin-right: 0
+          
   &__two-baner
     width: 100%
     display: flex
@@ -165,6 +160,10 @@
   top: calc(50% - 36px)    
   left: 0
   right: 0  
+
+.active-news
+  text-decoration: underline !important
+  color: $bgc
 
 // Media styles
 @media (max-width: 767px)    
